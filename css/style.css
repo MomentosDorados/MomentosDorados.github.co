@@ -1,0 +1,323 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+@font-face {
+    font-family:"parrafo";
+    src: url(../css/fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family:"titulo";
+    src: url(../css/fonts/Nunito/Nunito-VariableFont_wght.ttf);
+}
+
+/*general*/
+body
+{
+
+}
+.contenedor
+{
+    padding: 100px 0;
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo
+{
+    font-family: titulo;
+    color: #003F63;
+    font-size: -webkit-xxx-large;
+    text-align: center;
+    margin-bottom: 80px;
+}
+a{text-decoration: none;}
+p{    padding-top: 10px;    padding-bottom: 15px;    font-family: "parrafo";}
+h1{ font-family:"titulo";}
+h2{ font-family:"titulo";}
+h3{ font-family:"titulo";}
+h4{ font-family:"titulo";}
+
+.ola
+{
+
+    width: 100%;
+    padding: 0;
+    margin-left: 0px;
+
+}
+
+/*colores diviciones*/
+.uno{background-color: #fff}
+.dos{background-color: #b32428}
+.tres{background-color: #003F63;}
+.cuatro{background-color: #353d40;}
+
+
+/*Header*/
+header
+
+{   width: 100%;
+    height: 300px;
+    background: #fc4a1a;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2b036b3, #fc4d1db3), url(../img/gallery/bombas.jpg);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2b036b3, #fc4d1db3), url(../img/gallery/bombas.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.contenedor-boton
+{
+    position: absolute;
+    right: 10%;
+    top: 20px;
+    background-color: #f2b138af;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+nav
+{
+    padding: 50px 50px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul
+{
+    background-color: rgba(19, 19, 19, 0.466);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 100px;
+    text-align: center;
+    transition: all .5%;
+}
+nav ul li
+{
+    display: block;
+    line-height: 30px;
+    margin: 50px 0 ;
+    transition: all .5%;
+}
+
+nav ul li a 
+{
+    color: white;
+    margin-right: 10px;
+    font-family:"titulo";
+    font-size:x-large;
+    font-weight:600;
+    padding: 10px;
+    margin: 10px;
+
+}
+nav ul li a.active, nav ul li a:hover
+{
+    color:#f2b036b3;
+    transition: .3s;
+}
+
+
+.logo
+{
+    position: relative;
+    width: 10%;
+    height: auto;
+    max-width: 150px;
+    min-width: 100px;
+    top: -50px;
+    margin: 3%;
+}
+
+
+
+/*nuestro-trabajo*/
+.contenedor-nuestro-trabajo
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-nuestro-trabajo div img
+{
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.contenedor-nuestro-trabajo  div
+{
+    width: 76%;
+    padding-left: 9%;
+}
+
+.contenedor-nuestro-trabajo div div h3
+{
+    margin-bottom: 15px;
+    
+}
+
+.contenedor-nuestro-trabajo div div h3 span
+{
+    font-size: 25px;
+   color: #003F63;
+   font-family:"titulo";
+   
+}
+
+/*navidad*/
+
+.dos .fondo
+{
+    width: 100%;
+    height: 500px;
+    background:  url(../img/gallery/navidad.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    margin-top: 100px;
+
+}
+
+
+.contenedor-navidad
+{
+    display: flex;
+    justify-content: space-evenly;
+}
+.contenedor-navidad div 
+{
+    width: 100%;
+
+    
+}
+
+
+
+
+/*galeria*/
+.galeria
+{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-content: center;
+
+}
+.galeria .img 
+{
+    display: flex;
+    width: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1%;
+
+}
+.galeria .img img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/*otras fiestas*/
+.galeria .img-galeria-otras-fiestas 
+{
+    width: 30%;
+    height: 200px;
+    margin: 0.5%;
+   
+}
+
+
+
+
+/*fooder*/    
+
+
+footer .logo-footer
+{
+    text-align:center ;
+}
+footer .logo-footer img
+{
+    width: 200px;
+}
+footer  .redes-sociales
+{
+
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+    font-size: 20px;
+    padding-bottom: 100px;
+
+}
+footer  .redes-sociales i
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin: 20px ;
+    background:rgba(26, 26, 26, 0.671) ;
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    border-radius: 100% ;
+    color: rgba(255, 255, 255, 0.534);
+}
+
+footer  .redes-sociales i:hover
+{
+    color: rgba(255, 255, 255, 0.89);
+    filter: opacity(0.9);
+    transform: scale(1.02);
+}
+
+footer  .redes-sociales  .icon-google-plus:hover{ background: rgb(255, 0, 0); }
+footer  .redes-sociales  .icon-facebook:hover   { background: rgb(29, 93, 177); }
+footer  .redes-sociales .icon-instagram:hover   { background: rgb(219, 127, 51); background: linear-gradient(107deg, rgb(219, 160, 51) 0%, rgb(255, 74, 19) 31%, rgba(145,0,255,1) 100%);  }
+
+
+
+
+
+@media only screen and (min-width: 576px) and (max-width: 767px){
+    .galeria .img
+    {
+     width: 90%;   
+    }
+    .galeria .img-galeria-otras-fiestas 
+    {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 575px){
+    .contenedor-navidad
+    {
+        flex-direction: column;
+    }
+    .galeria .img-galeria-otras-fiestas 
+    {
+        width: 90%;
+    }
+
+    .contenedor-nuestro-trabajo 
+    {
+        flex-direction: column;
+    }
+}
